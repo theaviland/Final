@@ -1,0 +1,15 @@
+body{
+  background-color: #141E28;
+  color: #A8AFB6;
+  text-align: center;
+}
+p{
+  overflow: auto;
+}
+section{
+  font-size: 12px;
+  padding-top: 20px;
+}
+footer{
+  padding-top: 30px;
+}

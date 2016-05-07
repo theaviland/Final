@@ -1,0 +1,122 @@
+WeirdMaze
+  function diceRoller()
+    initialzie randomNumber to [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ]
+    return randomNumber a random number
+  END FUnction
+  function main(){
+    initialzie name to ""
+    initialzie output to ""
+    initialzie randoNum to ""
+    initialzie total to 0
+    initialzie userInput to ""
+    
+    prompt for name with What is your name?
+    alert name + " you need to make it to the supplies, you will be safe here.
+    while (total < 100)DO
+      randoNum = diceRoller()
+      IF (total === 2 || total === 5 || total === 10 || total === 12 || total === 40 || total === 42 || total === 45 || total === 52)THEN
+        prompt for userInput with Go down the dirt path or the brick path?
+        userInput = UpperCase the letters
+        IF (userInput === "DIRT")THEN
+          alert name + " has come along some fruit
+          total = add the random number to total
+          prompt for userInput with Eat the fruit or don't?
+          userInput = upper case the letters
+          IF (userInput === "EAT")THEN
+            alert name + " feels refreshed and ready to go! " + total + " out of 100
+            total = add random number to total
+            IF (total === 7 || total === 11 || total === 14 || total === 16 || total === 41 || total === 46 || total === 51 || total === 56)THEN
+              prompt for userInput with You see yet another split in the paths. Do you jump in the water and swim or jump across the broken path?
+              userInput = upper case the letters
+              IF (userInput === "JUMP")THEN
+                alert You start jumping over gaps and almost fall. But you get across safely.
+                total = add random number to total
+              ELSE IF(userInput === "SWIM")THEN
+                alert You jumped into the water and realize there are sharks.
+                display The sharks tore you to shreds and played pass the shreds with your remains.
+                display Refresh page if you want to try again!
+                display shark image
+                total = 100;
+              ELSE 
+                display You didn't choose a right answer.
+                display Refresh page if you want to try again!
+                display you lose image
+                total = 100;
+              ENDIF
+            ENDIF 
+          ELSE IF (userInput === "DON'T")THEN
+            alert You continue hoping you will find food
+            total = add random number to total
+            prompt for userInput with You see two more paths. gorilla path or berry path? " + total + " out of 100
+            userInput = uppercase the letters
+            IF (userInput === "GORILLA")THEN
+              alert The gorillas come over with bananas. Being greatful you pat his head and continue
+              total = add random number to total
+              alert You see some supplies. You think to yourself you've made it, when you see another survivor running from a killer turtle
+              prompt for userInput with Do you save the survivor or ignore him? Save, Ignore
+              userInput = upper case the letters
+              IF (userInput === "SAVE")THEN
+                alert You die from a killer turtle.
+                display The turtle shanked you with a knife and his buddies came and ate your ears and left your body to rot.
+                display Refresh page if you want to try again!
+                display turtle image
+                total = 100
+              ELSE IF (userInput === "IGNORE")THEN
+                display You ignore the survivor and watch the turtle shank him. But then go away.
+                total = add random number to total
+              ENDIF
+            ELSE IF (userInput === "BERRY")THEN
+              alert Natives come out and rip your eyes out.
+              display The natives ripped your eyes out colored them like berries. They took your body and tore it into pieces to sacrifice to their animals
+              display berry image
+              total = 100
+            ELSE 
+              display "You didn't choose a right answer.
+              display "Refresh page if you want to try again!
+              display you lose image
+              total = 100
+            ENDIF
+          ELSE
+            display You didn't choose a right answer.
+            display Refresh page if you want to try again!
+            display you lose image
+            total = 100
+          ENDIF
+        ELSEIF (userInput === "BRICK")THEN
+          alert The brick path falls apart and you fall into a alligator pit and die.
+          display The alligators eat " + name + "'s body by ripping each limb off.
+          total = 100
+          display alligator image
+          display The alligators eat " + name + "'s body by ripping each limb off.
+          display Refresh page if you want to try again!
+        ELSE
+          display You didn't choose a right answer.
+          display Refresh page if you want to try again!
+          display you lose image
+          total = 100
+        ENDIF
+      ELSE
+        total = add random number to total
+        alert("You moved forward " + randoNum + " steps. You keep searching for the supplies." + total + " out of 100");
+        IF (total >= 100)THEN
+        display Help has arrived and tells " + name + " how lucky they are!
+        display Refresh page if you want to try again!
+        display you win image
+        ENDIF
+      ENDIF
+      display output
+      
+    
+    
+    ENDWHILE
+
+  ENDMAIN
+  main();
+END
