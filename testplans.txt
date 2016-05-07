@@ -1,0 +1,29 @@
+VARIABLES: Name 
+
+Test One: 
+  Input: Trent, Brick
+  Expected Result: "The alligators eat Trent's body by ripping each limb off."
+                   "Refresh page if you want to try again!"
+  Actual Result: "The alligators eat Trent's body by ripping each limb off."
+                 "Refresh page if you want to try again!"
+
+Test Two: 
+  Input: Trent, dirt, eat
+  Expected Result: Help has arrived and tells Trent how lucky they are!
+                  Refresh page if you want to try again!
+  Actual Result: Help has arrived and tells Trent how lucky they are!
+                 Refresh page if you want to try again!
+
+Test Three: 
+  Input: Trent, dirt, don't, gorilla, ignore 
+  Expected Result: Help has arrived and tells Trent how lucky they are!
+                  Refresh page if you want to try again!
+  Actual Result: Help has arrived and tells Trent how lucky they are!
+                 Refresh page if you want to try again!
+                 
+Test Four: 
+  Input: Trent
+  Expected Result: Help has arrived and tells Trent how lucky they are!
+                  Refresh page if you want to try again!
+  Actual Result: Help has arrived and tells Trent how lucky they are!
+                 Refresh page if you want to try again!
